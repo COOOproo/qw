@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Свадьба Натали и Андрея</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="envelope-screen">
+    <img src="конверт.jpg" id="envelope" alt="Конверт" />
+    <div id="paper">ВЫ ПРИГЛАШЕНЫ НА СВАДЬБУ</div>
+  </div>
+
+  <canvas id="confetti-canvas"></canvas>
+
+  <div id="main-content" style="display: none;">
+    <div class="background"></div>
+    <div class="content">
+      <h1>Натали & Андрей</h1>
+      <div class="buttons">
+        <button id="yesBtn">ДА, ПРИДУ</button>
+        <button id="noBtn">УВЫ, НЕТ</button>
+      </div>
+      <div id="noMessage" style="display: none;">СПАСИБО, МЫ ВСЕ РАВНО ВАС ЦЕНИМ :)</div>
+      <div id="yesForm" style="display: none;">
+        <label>Ваше имя: <input type="text" id="nameInput" required /></label>
+        <p>Что предпочитаете пить?</p>
+        <select id="drinkSelect">
+          <option>Вино</option>
+          <option>Шампанское</option>
+          <option>Текила 🙈</option>
+          <option>Коньяк</option>
+          <option>Виски</option>
+          <option>Водка</option>
+          <option>Другое (указать ниже)</option>
+        </select>
+        <input type="text" placeholder="Свой вариант" id="customDrink" />
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
